@@ -1,12 +1,15 @@
+import { useSession } from "next-auth/react";
 import React from "react";
 import * as C from "./styles";
 
 function Header() {
+  const { data: session } = useSession();
+
   return (
     <C.Container>
       <C.Titulo>Acompanhamento de Estudos</C.Titulo>
       <C.ProfilePic
-        src="/ProfilePic.jpg"/>
+        src={session?.user?.image}/>
     </C.Container>
   );
 }
