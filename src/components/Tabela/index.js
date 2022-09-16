@@ -2,36 +2,39 @@ import cursos from "../../cursos";
 import * as C from "./styles";
 
 function Tabela() {
-
-
-
   return (
     <C.Container>
-      <C.Titulo>Cursos</C.Titulo>
+      <C.Titulo>Acompanhamento de Estudos</C.Titulo>
 
-      <C.Tabela>
+      <C.ContainerTabela>
+        <C.Tabela>
+          <C.Thead>
+            <C.LinhaTitulo>
+              <C.Th>Data</C.Th>
+              <C.Th>Nome do curso</C.Th>
+              <C.Th>Link do curso</C.Th>
+            </C.LinhaTitulo>
+          </C.Thead>
 
-        <C.Thead>
-          <C.Linha>
-            <C.Th>Data</C.Th>
-            <C.Th>Nome do curso</C.Th>
-          </C.Linha>
-        </C.Thead>
-
-        <C.TBody>
-          
-            {cursos.map((curso) => (
-                <>
-                <C.Linha key={curso.id}>
-                    <C.Coluna>{`${curso.data.getDate().toString()}/${(curso.data.getMonth() + 1).toString()}/${curso.data.getFullYear()}`}</C.Coluna>
-                    <C.Coluna>{curso.nome}</C.Coluna>
+          <C.TBody>
+            {cursos.map((curso, index) => (
+              <>
+                <C.Linha key={index}>
+                  <C.Coluna>{`${curso.data.getDate().toString()}/${(
+                    curso.data.getMonth() + 1
+                  ).toString()}/${curso.data.getFullYear()}`}</C.Coluna>
+                  <C.Coluna>{curso.nome}</C.Coluna>
+                  <C.Coluna>
+                    <C.aLink target={"_blank"} href={curso.link}>
+                      {curso.link}
+                    </C.aLink>
+                  </C.Coluna>
                 </C.Linha>
-                </>
-              ))}
-        </C.TBody>
-
-      </C.Tabela>
-
+              </>
+            ))}
+          </C.TBody>
+        </C.Tabela>
+      </C.ContainerTabela>
     </C.Container>
   );
 }

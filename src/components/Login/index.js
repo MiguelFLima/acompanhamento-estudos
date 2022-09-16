@@ -2,17 +2,7 @@ import React, { useState } from "react";
 import * as C from "./styles";
 
 function Login() {
-  const [data, setData] = useState({
-    usuario: "",
-    senha: "",
-  });
-
-  function handleLogin(e) {
-    e.preventDefault();
-    console.log(data);
-    setData({usuario: '', senha: ''})
-  }
-
+ 
   return (
     <C.Body>
       <C.ContainerLogin>

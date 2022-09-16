@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Body = styled.div`
     width: 100vw;
-    height: calc(100vh - 120px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -14,7 +14,7 @@ export const Body = styled.div`
 
 export const Container = styled.div`
     width: 100vw;
-    height: calc(100vh - 120px);
+    height: 100vh;
 `;
 
 export const ContainerLogin = styled.div`

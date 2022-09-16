@@ -1,20 +1,16 @@
-import {
-  getProviders,
-  signIn as SignIntoProvider,
-  useSession,
-} from "next-auth/react";
 import { useState } from "react";
 import * as C from "../src/components/Login/styles.js";
-import Header from "../src/components/Header";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebase'
 import {useRouter} from 'next/router';
 import { useRecoilState } from "recoil";
 import { credentialState } from "../atoms/credentialsAtom.js";
 
+
 function Signin() {
-  const [credentials, setCredentials] = useRecoilState(credentialState);
   const router = useRouter();
+  const [credentials, setCredentials] = useRecoilState(credentialState);
+
   const [data, setData] = useState({
     usuario: "",
     senha: "",
@@ -31,7 +27,8 @@ function Signin() {
         return setCredentials(userCredential);
       })
       .catch((error) => {
-        console.log(error)
+        console.log(error.message)
+        alert('Usuário ou senha incorretos! ')
       })
       setData({ usuario: "", senha: "" });
     }
@@ -41,11 +38,9 @@ function Signin() {
     router.push('/cursos')
   }
 
-
-
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <C.Body>
         <C.ContainerLogin>
           <C.Titulo>Bem vindo(a) </C.Titulo>
@@ -72,10 +67,3 @@ function Signin() {
 
 export default Signin;
 
-export async function getServerSideProps() {
-  return {
-    props: {
-      providers: await getProviders(),
-    },
-  };
-}
