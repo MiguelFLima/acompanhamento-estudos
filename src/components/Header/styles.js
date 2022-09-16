@@ -18,8 +18,8 @@ export const Titulo = styled.h1`
 `;
 
 export const ProfilePic = styled.img`
-    width: 60px;
-    height: 60px;
+    width: 4%;
+    height: 70px;
     margin-right: 3rem;
     border-radius: 50%;
 `;

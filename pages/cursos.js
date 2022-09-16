@@ -7,7 +7,8 @@ import { useRouter } from 'next/router';
 
 function Cursos() {
   const router = useRouter();
-  let credentials = useRecoilValue(credentialState)
+  credentials = useRecoilValue(credentialState)
+
 
   console.log(credentials?._tokenResponse?.registered)
   if (typeof window !== 'undefined' && credentials?._tokenResponse?.registered) {

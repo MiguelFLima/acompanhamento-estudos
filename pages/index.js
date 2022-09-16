@@ -22,14 +22,19 @@ function Signin() {
 
   function handleLogin(e) {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, data.usuario, data.senha)
-    .then( async ( userCredential ) => {
-      return setCredentials(userCredential);
-    })
-    .catch((error) => {
-      console.log(error)
-    })
-    setData({ usuario: "", senha: "" });
+    if (data.senha == '' || data.usuario == '') {
+      alert('Preencha os campos');
+      
+    } else { 
+      signInWithEmailAndPassword(auth, data.usuario, data.senha)
+      .then( async ( userCredential ) => {
+        return setCredentials(userCredential);
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+      setData({ usuario: "", senha: "" });
+    }
   }
 
   if(credentials?.user?.accessToken !== undefined) {
