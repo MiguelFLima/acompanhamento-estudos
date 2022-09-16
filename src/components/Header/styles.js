@@ -14,11 +14,11 @@ export const Titulo = styled.h1`
     font-size: 3.2rem;
     color: white;
     text-align: center;
-    margin-left: 3rem;
+    margin-left: 2%;
 `;
 
 export const ProfilePic = styled.img`
-    width: 4%;
+    width: 70px;
     height: 70px;
     margin-right: 3rem;
     border-radius: 50%;
