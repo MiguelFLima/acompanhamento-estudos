@@ -1,11 +1,10 @@
 import { useState } from "react";
 import * as C from "../src/components/Login/styles.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from '../firebase'
-import {useRouter} from 'next/router';
+import { auth } from "../firebase";
+import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import { credentialState } from "../atoms/credentialsAtom.js";
-
 
 function Signin() {
   const router = useRouter();
@@ -18,24 +17,22 @@ function Signin() {
 
   function handleLogin(e) {
     e.preventDefault();
-    if (data.senha == '' || data.usuario == '') {
-      alert('Preencha os campos');
-      
-    } else { 
+    if (data.senha == "" || data.usuario == "") {
+      alert("Preencha os campos");
+    } else {
       signInWithEmailAndPassword(auth, data.usuario, data.senha)
-      .then( async ( userCredential ) => {
-        return setCredentials(userCredential);
-      })
-      .catch((error) => {
-        console.log(error.message)
-        alert('Usuário ou senha incorretos! ')
-      })
+        .then(async (userCredential) => {
+          return setCredentials(userCredential);
+        })
+        .catch((error) => {
+          console.log(error.message);
+          alert("Usuário ou senha incorretos! ");
+        });
       setData({ usuario: "", senha: "" });
     }
   }
-
-  if(credentials?.user?.accessToken !== undefined) {
-    router.push('/cursos')
+  if (credentials?.user?.accessToken !== undefined) {
+    router.push("/cursos");
   }
 
   return (
@@ -66,4 +63,3 @@ function Signin() {
 }
 
 export default Signin;
-

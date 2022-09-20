@@ -431,6 +431,18 @@ let cursos = [
         data: new Date('2022, 09, 14'),
         link: '',
     },
+    {
+        id: 74,
+        nome: 'Construindo Portfolio',
+        data: new Date('2022, 09, 15'),
+        link: '',
+    },
+    {
+        id: 75,
+        nome: 'Construindo Portfolio',
+        data: new Date('2022, 09, 16'),
+        link: '',
+    },
 ];
 
 export default cursos;
