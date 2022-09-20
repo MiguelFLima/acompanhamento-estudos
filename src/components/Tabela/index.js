@@ -2,6 +2,20 @@ import cursos from "../../cursos";
 import * as C from "./styles";
 
 function Tabela() {
+
+  const cursosSortidos = cursos.sort((a,b) => b.data - a.data )
+  
+  
+  // {
+  //   if(a.data > b.data){
+  //     return -1;
+  //   }
+  //   if(a.data < b.data){
+  //     return 1;
+  //   }
+  //   return 0;
+  // })
+
   return (
     <C.Container>
       <C.Titulo>Acompanhamento de Estudos</C.Titulo>
@@ -17,7 +31,7 @@ function Tabela() {
           </C.Thead>
 
           <C.TBody>
-            {cursos.map((curso, index) => (
+            {cursosSortidos.map((curso, index) => (
               <>
                 <C.Linha key={index}>
                   <C.Coluna>{`${curso.data.getDate().toString()}/${(
