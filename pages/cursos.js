@@ -15,14 +15,16 @@ import { tokenService } from "../src/auth/tokenService";
             <Tabela />
         </div>
       )
+      } else if ( typeof window !== 'undefined' ) {
+        router.push('/')
+      }
     }
-  }
     
   export default Cursos;
 
 
   export async function getServerSideProps(ctx)  {  
-    const token = tokenService.get(ctx);
+    const token = tokenService.get(ctx) || null;
   
     return {
       props: {
