@@ -2,19 +2,7 @@ import cursos from "../../cursos";
 import * as C from "./styles";
 
 function Tabela() {
-
-  const cursosOrdenados = cursos.sort((a,b) => b.data - a.data )
-  
-  
-  // {
-  //   if(a.data > b.data){
-  //     return -1;
-  //   }
-  //   if(a.data < b.data){
-  //     return 1;
-  //   }
-  //   return 0;
-  // })
+  const cursosOrdenados = cursos.sort((a, b) => b.data - a.data);
 
   return (
     <C.Container>
@@ -32,8 +20,7 @@ function Tabela() {
 
           <C.TBody>
             {cursosOrdenados.map((curso, index) => (
-              <>
-                <C.Linha key={index}>
+              <C.Linha key={index}>
                   <C.Coluna>{`${curso.data.getDate().toString()}/${(
                     curso.data.getMonth() + 1
                   ).toString()}/${curso.data.getFullYear()}`}</C.Coluna>
@@ -44,7 +31,6 @@ function Tabela() {
                     </C.aLink>
                   </C.Coluna>
                 </C.Linha>
-              </>
             ))}
           </C.TBody>
         </C.Tabela>

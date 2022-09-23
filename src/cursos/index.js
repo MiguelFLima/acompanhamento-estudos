@@ -428,6 +428,14 @@ let cursos = [
         link: '',
     },
     {
+        id: 5444,
+        nome: 'JavaScript: validações e reconhecimento de vo',
+        data: new Date('2022, 08, 20'),
+        link: 'https://cursos.alura.com.br/course/javascript-validacoes-reconhecimento-voz',
+        CursoAlura: true,
+        ERepetido: false,
+    },
+    {
         id: 56,
         nome: 'Estudos pelo youtube e outras plataformas',
         data: new Date('2022, 08, 22'),
@@ -546,6 +554,36 @@ let cursos = [
         nome: 'Construindo Portfolio',
         data: new Date('2022, 09, 16'),
         link: '',
+    },
+    {
+        id: 76,
+        nome: 'Manutenção Portfólio',
+        data: new Date('2022, 09, 16'),
+        link: '',
+    },
+    {
+        id: 77,
+        nome: 'Manutenção Portfólio',
+        data: new Date('2022, 09, 16'),
+        link: '',
+    },
+    {
+        id: 78,
+        nome: 'Melhorias Acompanhamento',
+        data: new Date('2022, 09, 16'),
+        link: '',
+    },
+    {
+        id: 79,
+        nome: 'Melhorias Acompanhamento',
+        data: new Date('2022, 09, 16'),
+        link: '',
+    },
+    {
+        id: 80,
+        nome: 'NextJS: CI e CD para Front-end com o Github Actions',
+        data: new Date('2022, 09, 16'),
+        link: 'https://cursos.alura.com.br/course/nextjs-ci-cd-front-end-github-actions',
     },
 ];
 

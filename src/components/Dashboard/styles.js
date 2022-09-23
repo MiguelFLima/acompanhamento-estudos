@@ -6,6 +6,20 @@ export const DashContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: full;
+        
+    }
+`;
+
+export const BlocosContainer = styled.div`
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -39,6 +53,20 @@ export const BlocoContainer = styled.div`
         margin-top: 72px;
     }
 `;
+
+export const TituloDash = styled.h1`
+font-size: 3rem;
+color: white;
+width: 100vw;
+text-align: center;
+margin-top: 100px;
+
+@media (max-width: 768px) {
+    font-size: 2.3rem;
+}
+`;
+
+
  export const TituloBloco = styled.p`
     font-size: 3rem;
     color: white;
@@ -61,14 +89,3 @@ export const BlocoContainer = styled.div`
 }
  `;
 
-export const TituloDash = styled.h1`
-font-size: 3rem;
-color: white;
-width: 100vw;
-text-align: center;
-margin-top: 100px;
-
-@media (max-width: 768px) {
-    font-size: 2.3rem;
-}
-`;

@@ -5,6 +5,7 @@ import { auth } from "../firebase";
 import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import { credentialState } from "../atoms/credentialsAtom.js";
+import { tokenService } from "../src/auth/tokenService.js";
 
 function Signin() {
   const router = useRouter();
@@ -32,6 +33,8 @@ function Signin() {
     }
   }
   if (credentials?.user?.accessToken !== undefined) {
+    tokenService.save(credentials?.user?.accessToken)
+    localStorage.setItem('access_token', credentials?.user?.accessToken)
     router.push("/cursos");
   }
 

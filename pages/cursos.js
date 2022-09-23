@@ -1,39 +1,35 @@
-import Header from "../src/components/Header";
 import Tabela from "../src/components/Tabela";
-import { useRecoilValue } from 'recoil';
-import { credentialState } from '../atoms/credentialsAtom';
 import { useRouter } from 'next/router';
 import Dashboard from '../src/components/Dashboard';
-import * as C from '../src/styles/styles';
+import { tokenService } from "../src/auth/tokenService";
 
 
   
-  function Cursos() {
+  function Cursos(token) {
     const router = useRouter();
-    let userCredentials = useRecoilValue(credentialState);
-    let token = userCredentials?._tokenResponse?.registered;
-    console.log(userCredentials?._tokenResponse?.registered)
-  
-    if (typeof window !== 'undefined' && token) {
+    console.log(token)
+    if (typeof window !== 'undefined' && token !== null) {
       return (
-        <>
-            {/* <Header /> */}
-            
-            {/* DashBoard */}
+        <div>
             <Dashboard />
-
-            {/* Tabela */}
             <Tabela />
-        </>
+        </div>
       )
-    } else if(typeof window !== 'undefined') {
-      router.push('/')
     }
-    
-    
   }
     
   export default Cursos;
+
+
+  export async function getServerSideProps(ctx)  {  
+    const token = tokenService.get(ctx);
+  
+    return {
+      props: {
+        token,
+      }
+    }
+  }
   
 
 
