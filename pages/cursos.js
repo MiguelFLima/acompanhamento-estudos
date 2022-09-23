@@ -3,6 +3,8 @@ import Tabela from "../src/components/Tabela";
 import { useRecoilValue } from 'recoil';
 import { credentialState } from '../atoms/credentialsAtom';
 import { useRouter } from 'next/router';
+import Dashboard from '../src/components/Dashboard';
+import * as C from '../src/styles/styles';
 
 
   
@@ -16,6 +18,11 @@ import { useRouter } from 'next/router';
       return (
         <>
             {/* <Header /> */}
+            
+            {/* DashBoard */}
+            <Dashboard />
+
+            {/* Tabela */}
             <Tabela />
         </>
       )

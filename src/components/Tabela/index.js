@@ -3,7 +3,7 @@ import * as C from "./styles";
 
 function Tabela() {
 
-  const cursosSortidos = cursos.sort((a,b) => b.data - a.data )
+  const cursosOrdenados = cursos.sort((a,b) => b.data - a.data )
   
   
   // {
@@ -31,7 +31,7 @@ function Tabela() {
           </C.Thead>
 
           <C.TBody>
-            {cursosSortidos.map((curso, index) => (
+            {cursosOrdenados.map((curso, index) => (
               <>
                 <C.Linha key={index}>
                   <C.Coluna>{`${curso.data.getDate().toString()}/${(
