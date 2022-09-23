@@ -558,31 +558,31 @@ let cursos = [
     {
         id: 76,
         nome: 'Manutenção Portfólio',
-        data: new Date('2022, 09, 16'),
+        data: new Date('2022, 09, 19'),
         link: '',
     },
     {
         id: 77,
         nome: 'Manutenção Portfólio',
-        data: new Date('2022, 09, 16'),
+        data: new Date('2022, 09, 20'),
         link: '',
     },
     {
         id: 78,
         nome: 'Melhorias Acompanhamento',
-        data: new Date('2022, 09, 16'),
+        data: new Date('2022, 09, 21'),
         link: '',
     },
     {
         id: 79,
         nome: 'Melhorias Acompanhamento',
-        data: new Date('2022, 09, 16'),
+        data: new Date('2022, 09, 22'),
         link: '',
     },
     {
         id: 80,
         nome: 'NextJS: CI e CD para Front-end com o Github Actions',
-        data: new Date('2022, 09, 16'),
+        data: new Date('2022, 09, 23'),
         link: 'https://cursos.alura.com.br/course/nextjs-ci-cd-front-end-github-actions',
     },
 ];
