@@ -8,23 +8,26 @@ import { tokenService } from "../src/auth/tokenService";
   function Cursos(token) {
     const router = useRouter();
     console.log(token)
-    if (typeof window !== 'undefined' && token !== null) {
-      return (
-        <div>
-            <Dashboard />
-            <Tabela />
-        </div>
-      )
-      } else if ( typeof window !== 'undefined' ) {
-        router.push('/')
-      }
-    }
+
+        return (
+          <>
+            {typeof window !== 'undefined' && !token ? 
+            router.push('/')
+            :
+              <>
+                <Dashboard></Dashboard>
+                <Tabela></Tabela> 
+              </>}
+          </>
+        )
+}
+    
     
   export default Cursos;
 
 
   export async function getServerSideProps(ctx)  {  
-    const token = tokenService.get(ctx) || null;
+    const token = tokenService.get(ctx);
   
     return {
       props: {
