@@ -627,6 +627,46 @@ let cursos = [
         CursoAlura: true,
         ERepetido: false,
     },
+    {
+        id: 86,
+        nome: 'React: desenvolvendo com JavaScript',
+        data: new Date('2022, 10, 03'),
+        link: 'https://cursos.alura.com.br/course/react-desenvolvendo-javascript',
+        CursoAlura: true,
+        ERepetido: true,
+    },
+    {
+        id: 87,
+        nome: 'Alura Challange 5',
+        data: new Date('2022, 10, 04'),
+        link: 'https://www.alura.com.br/challenges/front-end-5?host=https://cursos.alura.com.br',
+        CursoAlura: false,
+        ERepetido: false,
+    },
+    {
+        id: 88,
+        nome: 'React: gerenciamento de estados globais com Redux',
+        data: new Date('2022, 10, 05'),
+        link: 'https://cursos.alura.com.br/course/react-gerenciamento-estados-globais-redux',
+        CursoAlura: true,
+        ERepetido: false,
+    },
+    {
+        id: 89,
+        nome: 'Imersão React/Next 4',
+        data: new Date('2022, 10, 06'),
+        link: 'https://cursos.alura.com.br/imersoes/aulas/aula-1-components-com-react-styled-components-e-nextjs-c53',
+        CursoAlura: false,
+        ERepetido: false,
+    },
+    {
+        id: 90,
+        nome: 'Imersão React/Next 4',
+        data: new Date('2022, 10, 07'),
+        link: 'https://cursos.alura.com.br/imersoes/aulas/aula-1-components-com-react-styled-components-e-nextjs-c53',
+        CursoAlura: false,
+        ERepetido: false,
+    },
 ];
 
 export default cursos;
