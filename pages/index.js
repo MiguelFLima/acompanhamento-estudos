@@ -35,7 +35,6 @@ function Signin() {
   }
   if (credentials?.user?.accessToken !== undefined) {
     tokenService.save(credentials?.user?.accessToken)
-    localStorage.setItem('access_token', credentials?.user?.accessToken)
     router.push("/cursos");
   }
 

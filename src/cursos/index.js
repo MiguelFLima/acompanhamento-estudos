@@ -6,6 +6,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/html5-css3-primeiros-passos',
         CursoAlura: true ,
         ERepetido: false,
+        foco: 'HTML' || 'CSS',
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/html5-css3-posicionamento-listas-navegacao',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'HTML' || 'CSS',
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/html5-css3-formularios-tabelas',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'HTML' || 'CSS',
     },
     {
         id: 4,
@@ -30,6 +33,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/html5-css3-avancando-css',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'HTML' || 'CSS',
     },
     {
         id: 5,
@@ -38,6 +42,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/html-css-praticando-html-css',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'HTML' || 'CSS',
     },
     {
         id: 6,
@@ -46,6 +51,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/seo-otimizacao-sites',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'HTML' || 'CSS',
     },
     {
         id: 8,
@@ -54,6 +60,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/posicione-elementos-com-flexbox',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'CSS'
     },
     {
         id: 9,
@@ -62,6 +69,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/css-grid-layout',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'CSS',
     },
     {
         id: 10,
@@ -70,6 +78,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/css-dispondo-elementos-flexbox-grid',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'CSS',
     },
     {
         id: 11,
@@ -78,6 +87,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/mobile-first-layouts-responsivos',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'CSS',
     },
     {
         id: 12,
@@ -86,6 +96,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/mobile-first-layouts-responsivos',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'CSS',
     },
     {
         id: 13,
@@ -94,6 +105,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/arquitetura-css',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'CSS',
     },
     {
         id: 14,
@@ -102,6 +114,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/acessibilidade-web-front-end',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'HTML',
     },
     {
         id: 15,
@@ -110,6 +123,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/http-fundamentos',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla',
     },
     {
         id: 16,
@@ -118,6 +132,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-manipulando-dom',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla',
     },
     {
         id: 17,
@@ -126,6 +141,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-web-validacao-formularios-html5',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla' || 'HTML',
     },
     {
         id: 18,
@@ -134,6 +150,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-web-paginas-dinamicas',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla',
     },
     {
         id: 19,
@@ -142,6 +159,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-metodos-array',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla',
     },
     {
         id: 20,
@@ -150,6 +168,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/expressoes-regulares',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla',
     },
     {
         id: 21,
@@ -158,6 +177,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/expressoes-regulares',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'JS Vanilla',
     },
     {
         id: 22,
@@ -166,6 +186,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-web-armazenando-dados-navegador',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla',
     },
     {
         id: 23,
@@ -174,6 +195,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-web-armazenando-dados-navegador',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'JS Vanilla',
     },
     {
         id: 24,
@@ -182,14 +204,16 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-arquivos-estaticos',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS',
     },
     {
-        id: 25,
+        id: 250,
         nome: 'React: lidando com arquivos estáticos',
         data: new Date('2022, 07, 08'),
         link: 'https://cursos.alura.com.br/course/react-arquivos-estaticos',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS',
     },
     {
         id: 25,
@@ -198,6 +222,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-biblioteca-react-router',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS',
     },
     {
         id: 27,
@@ -206,6 +231,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-biblioteca-react-router',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS',
     },
     {
         id: 28,
@@ -214,6 +240,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-integrando-projeto-react-apis',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS',
     },
     {
         id: 29,
@@ -222,6 +249,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-integrando-projeto-react-apis',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS',
     },
     {
         id: 30,
@@ -230,6 +258,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-gerenciando-estado-recoil',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS',
     },
     {
         id: 31,
@@ -238,6 +267,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-gerenciando-estado-recoil',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS',
     },
     {
         id: 32,
@@ -246,6 +276,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-modernizando-escrever-typescript',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 33,
@@ -254,6 +285,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-modernizando-escrever-typescript',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 34,
@@ -262,6 +294,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-testando-componentes',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS',
     },
     {
         id: 35,
@@ -270,6 +303,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-testando-componentes',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS',
     },
     {
         id: 36,
@@ -278,6 +312,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/typescript-evoluindo-javascript',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 37,
@@ -286,6 +321,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/typescript-evoluindo-javascript',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 38,
@@ -294,6 +330,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/typescript-avancando-linguagem',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 39,
@@ -302,6 +339,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/typescript-avancando-linguagem',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 40,
@@ -310,6 +348,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/typescript-tecnicas-boas-praticas',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 41,
@@ -318,6 +357,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/typescript-tecnicas-boas-praticas',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS' || 'TypeScript',
     },
     {
         id: 42,
@@ -326,6 +366,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/next-js-tour-next-js',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'NextJS',
     },
     {
         id: 43,
@@ -334,6 +375,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/next-js-tour-next-js',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'NextJS',
     },
     {
         id: 44,
@@ -342,6 +384,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/next-js-iniciando-framework',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'NextJS',
     },
     {
         id: 45,
@@ -350,6 +393,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/next-js-iniciando-framework',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'NextJS',
     },
     {
         id: 46,
@@ -358,6 +402,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/nextjs-autenticacao-gerenciamento-tokens',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'NextJS',
     },
     {
         id: 47,
@@ -366,6 +411,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/nextjs-autenticacao-gerenciamento-tokens',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'NextJS',
     },
     {
         id: 48,
@@ -374,6 +420,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/next-js-trabalhando-cms',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'NextJS',
     },
     {
         id: 49,
@@ -382,6 +429,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/next-js-trabalhando-cms',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'NextJS',
     },
     {
         id: 50,
@@ -390,6 +438,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/nextjs-arquitetura-front-end',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'NextJS',
     },
     {
         id: 51,
@@ -398,6 +447,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/nextjs-arquitetura-front-end',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'NextJS',
     },
     {
         id: 52,
@@ -406,6 +456,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-consumindo-tratando-dados-api',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla',
     },
     {
         id: 53,
@@ -414,6 +465,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/javascript-consumindo-tratando-dados-api',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'JS Vanilla',
     },
     {
         id: 54,
@@ -429,11 +481,12 @@ let cursos = [
     },
     {
         id: 5444,
-        nome: 'JavaScript: validações e reconhecimento de vo',
+        nome: 'JavaScript: validações e reconhecimento de voz',
         data: new Date('2022, 08, 20'),
         link: 'https://cursos.alura.com.br/course/javascript-validacoes-reconhecimento-voz',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'JS Vanilla'
     },
     {
         id: 56,
@@ -586,6 +639,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/nextjs-ci-cd-front-end-github-actions',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'NextJS',
     },
     {
         id: 81,
@@ -610,6 +664,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/css-flexbox-layouts-responsivos',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'CSS',
     },
     {
         id: 84,
@@ -618,6 +673,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/css-construindo-layouts-grid',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'CSS',
     },
     {
         id: 85,
@@ -626,6 +682,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-desenvolvendo-javascript',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS',
     },
     {
         id: 86,
@@ -634,6 +691,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-desenvolvendo-javascript',
         CursoAlura: true,
         ERepetido: true,
+        foco: 'ReactJS',
     },
     {
         id: 87,
@@ -650,6 +708,7 @@ let cursos = [
         link: 'https://cursos.alura.com.br/course/react-gerenciamento-estados-globais-redux',
         CursoAlura: true,
         ERepetido: false,
+        foco: 'ReactJS',
     },
     {
         id: 89,

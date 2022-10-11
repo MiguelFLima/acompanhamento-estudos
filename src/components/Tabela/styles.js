@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin-top: 130px;
-    width: 100vw;
+    width: 100%;
     display: flex; 
     flex-direction: column;
 `;
@@ -10,12 +10,12 @@ export const Container = styled.div`
 export const Titulo = styled.h1`
     font-size: 2.8rem;
     color: white;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 `;
 
 export const ContainerTabela = styled.div`
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -7,12 +7,11 @@ import { tokenService } from "../src/auth/tokenService";
   
   function Cursos(token) {
     const router = useRouter();
-    console.log(token)
-
+    
         return (
           <>
-            {typeof window !== 'undefined' && !token ? 
-            router.push('/')
+            {typeof window !== 'undefined' && !token 
+            ? router.push('/')
             :
               <>
                 <Dashboard></Dashboard>
