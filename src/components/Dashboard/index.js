@@ -27,10 +27,10 @@ function Dashboard() {
 
   return (
     <C.DashContainer>
-      <C.TituloDash>Acompanhamento Dash</C.TituloDash>
+      <C.TituloDash>Acompanhamento Dashboard</C.TituloDash>
 
       <C.BlocosContainerMaiores>
-        {/* ===== dash 1 ===== */}
+        {/* ===== dash maior ===== */}
         <C.BlocoContainer>
           <C.TituloBloco>Dias de Estudo</C.TituloBloco>
           <C.ConteudoBloco>{cursos.length}</C.ConteudoBloco>
@@ -42,6 +42,8 @@ function Dashboard() {
         </C.BlocoContainer>
       </C.BlocosContainerMaiores>
 
+
+      {/* ===== dash menor ===== */}
       <C.BlocosContainerMenores>
         <C.BlocoMenor>
           <C.TituloBlocoMenor>

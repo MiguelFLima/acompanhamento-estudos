@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const DashContainer = styled.div`
     width: 100%;
     height: 100vh;
@@ -33,11 +32,11 @@ export const BlocosContainerMaiores = styled.div`
 
 export const BlocoContainer = styled.div`
     width: 400px;
-    height: 220px;
-    color: white;
-    border: 1px solid white;
+    height: 180px;
+    background-color: var(--corTerciaria) ;
+    border: 1px solid var(--corSecundaria);
     margin-inline: 140px;
-    margin-top: 60px;
+    margin-top: 0px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -45,8 +44,7 @@ export const BlocoContainer = styled.div`
     font-weight: bold;
     border-radius: 15px;
     padding: 15px;
-    box-shadow: 1.5px 1.5px 15px black;
-    background-color: rgb(30,30,30);
+    box-shadow: 2px 2px 5px var(--corBranco);
 
     @media (max-width: 768px) {
         width: 200px;
@@ -59,7 +57,8 @@ export const BlocoContainer = styled.div`
 
 export const TituloDash = styled.h1`
     font-size: 3rem;
-    color: white;
+    color: var(--corBranco);
+    letter-spacing: 8px;
     width: 100%;
     text-align: center;
     margin-top: 50px;
@@ -74,8 +73,8 @@ export const TituloDash = styled.h1`
 
  export const TituloBloco = styled.p`
     font-size: 2.4rem;
-    color: white;
-    margin-bottom: 0;
+    color: var(--corPrincipal);
+    margin: 0;
 
     @media (max-width: 768px) {
     font-size: 2rem;
@@ -87,7 +86,8 @@ export const TituloDash = styled.h1`
     font-size: 3rem;
     font-weight: bold;
     border-radius: 15px;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid var(--corSexta);
+    margin: 0;
 
     @media (max-width: 768px) {
     font-size: 2rem;
@@ -109,7 +109,7 @@ export const BlocosContainerMenores = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: -30px;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -123,12 +123,15 @@ export const BlocosContainerMenores = styled.div`
 export const BlocoMenor = styled.div`
     width: 280px;
     height: 200px;
-    border: 1px solid white;
+    border: 1px solid black;
     margin-inline: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--corTerciaria);
+    box-shadow: 2px 2px 5px var(--corBranco);
+    border-radius: 15px;
 
     @media (max-width: 768px) {
         margin-inline: 20px;
@@ -139,9 +142,8 @@ export const BlocoMenor = styled.div`
 
 export const TituloBlocoMenor = styled.p`
     font-size: 1.6rem;
-    color: white;
+    color: var(--corPrincipal);
     text-align: center;
-    color: white;
     margin-bottom: 2px;
     line-height: 35px;
 
@@ -151,13 +153,14 @@ export const TituloBlocoMenor = styled.p`
  `;
 
 export const ConteudoBlocoMenor = styled.p`
-    font-size: 1.8rem;
-    color: white;
+    font-size: 2rem;
+    color: var(--corSexta);
     font-weight: bold;
+    margin-top: 14px;
     border-radius: 15px;
     width: 25%;
     text-align: center;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--corSexta);
     padding-bottom: 6px;
 
     @media (max-width: 768px) {
